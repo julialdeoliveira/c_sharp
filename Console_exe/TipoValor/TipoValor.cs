@@ -10,6 +10,8 @@ namespace Console_exe.TipoValor
     {
         public void Executar()
         {
+            //Esse são os tipos númericos no C#
+
             byte min = Byte.MinValue;
             byte max = Byte.MaxValue;
             System.Console.WriteLine("Min byte " + min + " Max byte " + max);
