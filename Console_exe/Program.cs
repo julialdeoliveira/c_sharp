@@ -1,4 +1,5 @@
-﻿using Console_exe.TipoValor;
+﻿using Console_exe.exercicios;
+using Console_exe.TipoValor;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +12,11 @@ namespace Console_exe
     {
         static void Main(string[] args)
         {
-            TipoValor1 tipo1 = new TipoValor1();
+            TipoNumerico tipo1 = new TipoNumerico();
             tipo1.Executar();
             BemVindo.Salutar();
+            TipoNumerico2.Executa();
+            Cadastro.Cadastrar();
         }
     }
 }

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Console_exe.TipoValor
 {
-    internal class TipoValor1
+    internal class TipoNumerico
+
     {
         public void Executar()
         {
@@ -31,15 +32,15 @@ namespace Console_exe.TipoValor
 
             Int16 int16Min = Int16.MinValue;
             Int16 int16Max = Int16.MaxValue;
-            System.Console.WriteLine("Min int16 " + int16Min + "Max int16" + int16Min);
+            System.Console.WriteLine("Min int16 " + int16Min + "Max int16" + int16Max);
 
             Int32 int32Min = Int32.MinValue;
             Int32 int32Max = Int32.MaxValue;
-            System.Console.WriteLine("Min int32 " + int32Min + "Max int32" + int32Min);
+            System.Console.WriteLine("Min int32 " + int32Min + "Max int32" + int32Max);
 
             Int64 int64Min = Int64.MinValue;
             Int64 int64Max = Int64.MaxValue;
-            System.Console.WriteLine("Min int64 " + int64Min + "Max int64" + int64Min);
+            System.Console.WriteLine("Min int64 " + int64Min + "Max int64" + int64Max);
 
             long longMin = long.MinValue;
             long longMax = long.MaxValue;
