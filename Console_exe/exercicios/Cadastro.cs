@@ -14,22 +14,35 @@ namespace Console_exe.exercicios
         //Nome, Sobrenome e idade
         // 3- Ao fim deve exibir o nome completo e a idade junto com a mensagem de despedida
 
-            public static void Cadastrar()
+        //byte idade = Byte.Parse(System.Console.ReadLine());
+
+
+        public static void Cadastrar()
         {
             Console.WriteLine("Seja bem vindo");
-            Console.WriteLine("Digite seu primeiro nome");
+            Console.WriteLine("Digite seu primeiro nome: ");
             string nome = Console.ReadLine();
-            Console.WriteLine("Digite seu sobrenome");
+            Console.WriteLine("Digite seu sobrenome: ");
             string sobrenome = Console.ReadLine();
-            Console.WriteLine("Digite sua idade");
-            byte idade = Convert.ToByte(Console.ReadLine());
+
+            byte idade = 0;
+
             while (idade == 0)
             {
-                Console.WriteLine("Digite uma idade");
-                idade = Convert.ToByte(Console.ReadLine());
-            }
-            Console.WriteLine($"Até mais {nome} {sobrenome}, que tem {idade} anos");
 
+                try
+                {
+                    Console.WriteLine("Digite uma idade válida: ");
+                    idade = Convert.ToByte(Console.ReadLine());
+                    Console.WriteLine($"Até mais {nome} {sobrenome}, que tem {idade} anos");
+
+                }
+                catch
+                {
+                    Console.WriteLine("Você digitou uma idade errada");
+                }
+
+            }
 
         }
     }

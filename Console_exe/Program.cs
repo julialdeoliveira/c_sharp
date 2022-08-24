@@ -1,4 +1,5 @@
-﻿using Console_exe.exercicios;
+﻿using Console_exe._1_TipoReferencia;
+using Console_exe.exercicios;
 using Console_exe.TipoValor;
 using System;
 using System.Collections.Generic;
@@ -12,11 +13,31 @@ namespace Console_exe
     {
         static void Main(string[] args)
         {
-            TipoNumerico tipo1 = new TipoNumerico();
-            tipo1.Executar();
-            BemVindo.Salutar();
-            TipoNumerico2.Executa();
-            Cadastro.Cadastrar();
+            //TipoNumerico tipo1 = new TipoNumerico();
+            //HelloWorld.Name();
+            //tipo1.Executar();
+            //BemVindo.Salutar();
+            //TipoNumerico2.Executa();
+            //Cadastro.Cadastrar();
+            //TipoNumerico3.Executa();
+            //TipoBooleano.Executa();
+            //Enumeradores.Executa();
+            //Enumeradores2.Executa();
+            //Estruturas.Executar();
+
+            // Pessoa pessoa = new Pessoa("janaina", "quirino");
+            //string msg = pessoa.Saudacao();
+            //Console.WriteLine(msg);
+            // Console.WriteLine(pessoaFisica.Saudacao());
+            // Console.ReadLine();
+
+            TestePessoas.Executa();
+            TestePessoas.ExecutaJuridica();
+
+     
+
+
+            
         }
     }
 }

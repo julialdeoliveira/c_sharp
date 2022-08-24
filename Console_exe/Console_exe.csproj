@@ -43,13 +43,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1-TipoReferencia\PessoaJuridica.cs" />
+    <Compile Include="1-TipoReferencia\PessoaFisicaRepository.cs" />
+    <Compile Include="1-TipoReferencia\Pessoa.cs" />
+    <Compile Include="1-TipoReferencia\PessoaFisica.cs" />
+    <Compile Include="1-TipoReferencia\PessoaJuridicaRepository.cs" />
+    <Compile Include="1-TipoReferencia\TestePessoas.cs" />
     <Compile Include="BemVindo.cs" />
     <Compile Include="exercicios\Cadastro.cs" />
     <Compile Include="HelloWorld.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TipoValor\TipoNumerico.cs" />
-    <Compile Include="TipoValor\TipoNumerico2.cs" />
+    <Compile Include="0-TipoValor\Enumeradores.cs" />
+    <Compile Include="0-TipoValor\Enumeradores2.cs" />
+    <Compile Include="0-TipoValor\Estruturas.cs" />
+    <Compile Include="0-TipoValor\TipoBooleano.cs" />
+    <Compile Include="0-TipoValor\TipoNumerico.cs" />
+    <Compile Include="0-TipoValor\TipoNumerico2.cs" />
+    <Compile Include="0-TipoValor\TipoNumerico3.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
