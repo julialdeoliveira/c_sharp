@@ -6,30 +6,30 @@ using System.Threading.Tasks;
 
 namespace Console_exe._1_TipoReferencia
 {
-    internal class BaseRepository : IRepository
+    internal class BaseRepository<T> : IRepository<T> where T : BaseModel
     {
-        List<Pessoa> pessoas;
+        List<T> pessoas;
 
         public BaseRepository()
         {
-            this.pessoas = new List<Pessoa>();
+            this.pessoas = new List<T>();
         }
-        public string Create(Pessoa p)
+        public string Create(T p)
         {
             this.pessoas.Add(p);
-            return "Pessoa: " + p.Nome + " Salva com sucesso";
+            return "Pessoa: " + p.Id + " Salva com sucesso";
         }
 
       
 
-        public List<Pessoa> Read()
+        public List<T> Read()
         {
             return pessoas;
         }
 
-        public string Update(Pessoa p)
+        public string Update(T p)
         {
-            return "Pessoa: " + p.Nome + " alterada com sucesso";
+            return "Pessoa: " + p.Id + " alterada com sucesso";
         }
 
         public string Delete(int id)

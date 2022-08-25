@@ -31,8 +31,10 @@ namespace Console_exe
             // Console.WriteLine(pessoaFisica.Saudacao());
             // Console.ReadLine();
 
-            TestePessoas.Executa();
-            TestePessoas.ExecutaJuridica();
+            //TestePessoas.Executa();
+            //TestePessoas.ExecutaJuridica();
+            TestePessoas.ExecutaPessoas();
+            TestBooks.ShowBooks();
 
      
 

@@ -8,6 +8,42 @@ namespace Console_exe._1_TipoReferencia
 {
     internal class TestePessoas
     {
+
+        public static void ExecutaPessoas()
+        {
+            Pessoa p = new Pessoa("Júlia", "Maia");
+            Pessoa pf = new PessoaFisica("Guilherme", "Maia", "cpf");
+            Pessoa pj = new PessoaJuridica("Matheus", "Maia", "cnpj");
+
+            PessoaFisica pf2 = (PessoaFisica)pf;
+            PessoaJuridica pj2 = (PessoaJuridica)pj;
+
+            //Console.WriteLine(p.Saudacao());
+            //Console.WriteLine(pf.Saudacao());
+            //Console.WriteLine(pj.Saudacao());
+            
+            BaseRepository<Pessoa> baseRepository = new BaseRepository<Pessoa>();
+            baseRepository.Create(p);
+            baseRepository.Create(pf2);
+            baseRepository.Create(pj2);
+
+            foreach (var pessoa in baseRepository.Read()) //Mais eficiente para fazer o método em cada pessoa
+            {
+                Console.WriteLine(pessoa.Saudacao());
+
+
+            }
+            //Console.WriteLine(baseRepository.Create(p));
+            //Console.WriteLine(baseRepository.Create(pf));
+            //Console.WriteLine(baseRepository.Create(pj));
+
+            Produto prod1 = new Produto();
+
+
+
+
+
+        }
         public static void Executa()
         {
             PessoaFisica pessoaFisica = new PessoaFisica("Júlia", "Luciani", "44444");
@@ -23,7 +59,7 @@ namespace Console_exe._1_TipoReferencia
             }
             Console.Read();
 
-            
+
         }
 
         public static void ExecutaJuridica()
@@ -41,7 +77,7 @@ namespace Console_exe._1_TipoReferencia
                 Console.Read();
             }
         }
-        
-    
+
+
     }
 }
