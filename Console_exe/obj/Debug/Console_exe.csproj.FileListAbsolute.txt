@@ -6,3 +6,11 @@ C:\dev\C#\WarrenTechAcademy\Console_exe\obj\Debug\Console_exe.csproj.SuggestedBi
 C:\dev\C#\WarrenTechAcademy\Console_exe\obj\Debug\Console_exe.csproj.CoreCompileInputs.cache
 C:\dev\C#\WarrenTechAcademy\Console_exe\obj\Debug\Console_exe.exe
 C:\dev\C#\WarrenTechAcademy\Console_exe\obj\Debug\Console_exe.pdb
+C:\dev\C#\c_sharp\Console_exe\bin\Debug\Console_exe.exe.config
+C:\dev\C#\c_sharp\Console_exe\bin\Debug\Console_exe.exe
+C:\dev\C#\c_sharp\Console_exe\bin\Debug\Console_exe.pdb
+C:\dev\C#\c_sharp\Console_exe\obj\Debug\Console_exe.csproj.AssemblyReference.cache
+C:\dev\C#\c_sharp\Console_exe\obj\Debug\Console_exe.csproj.SuggestedBindingRedirects.cache
+C:\dev\C#\c_sharp\Console_exe\obj\Debug\Console_exe.csproj.CoreCompileInputs.cache
+C:\dev\C#\c_sharp\Console_exe\obj\Debug\Console_exe.exe
+C:\dev\C#\c_sharp\Console_exe\obj\Debug\Console_exe.pdb
