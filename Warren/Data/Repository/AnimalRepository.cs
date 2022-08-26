@@ -1,4 +1,5 @@
 ﻿using Data.Model;
+using Data.NovaPasta;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,11 @@ namespace Data.Repository
 {
     public class AnimalRepository : BaseRepository<Animal>
     {
+  
 
-    }
+	}
+       
+
+       
+    
 }

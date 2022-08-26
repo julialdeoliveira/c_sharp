@@ -1,4 +1,5 @@
 ﻿using Data.Model;
+using Data.NovaPasta;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,31 +10,58 @@ namespace Data.Repository
 {
    public class BaseRepository<T> : IRepository<T> where  T : BaseModel
     {
-        public string Create(T model)
+      
+        public virtual List<T> GetAll()
         {
-            return "Criado";
+            List<T> list = new List<T>();
+            using (WarrenContext warrenContext = new WarrenContext())
+            {
+                list = warrenContext.Set<T>().ToList();
+            }
+            return list;
+        }
+        public virtual T GetById(int id)
+        {
+            T model = null;
+            using (WarrenContext warrenContext = new WarrenContext())
+            {
+                model = warrenContext.Set<T>().Find(id);
+            }
+            return model;
+        }
+        
+
+
+        public virtual string Create(T model)
+        {
+            using (WarrenContext warrenContext = new WarrenContext())
+            {
+                warrenContext.Add(model);
+                warrenContext.SaveChanges();
+            }
+            return "criado";
         }
 
-        public string Delete(int id)
+
+        public virtual string Update(T model)
         {
+            using (WarrenContext warrenContext = new WarrenContext())
+            {
+                warrenContext.Entry<T>(model).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                warrenContext.SaveChanges();
+            }
+            return "Alterado" ;
+        }
+        public virtual string Delete(int id)
+        {
+            using (WarrenContext warrenContext = new WarrenContext())
+            {
+                warrenContext.Entry<T>(this.GetById(id)).State = Microsoft.EntityFrameworkCore.EntityState.Deleted;
+                warrenContext.SaveChanges();
+            }
             return "Deletado";
         }
 
-        public List<T> GetAll()
-        {
-           List<T> list = new List<T>();
-            return list;
-        }
 
-        public T GetById(int id)
-        {
-            T model = null;
-            return model;
-        }
-
-        public string Update(T model)
-        {
-            return "Alterado";
-        }
     }
 }

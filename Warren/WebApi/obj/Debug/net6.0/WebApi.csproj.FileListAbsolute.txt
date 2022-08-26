@@ -27,3 +27,9 @@ C:\dev\C#\c_sharp\Warren\WebApi\obj\Debug\net6.0\WebApi.genruntimeconfig.cache
 C:\dev\C#\c_sharp\Warren\WebApi\obj\Debug\net6.0\ref\WebApi.dll
 C:\dev\C#\c_sharp\Warren\WebApi\bin\Debug\net6.0\Data.dll
 C:\dev\C#\c_sharp\Warren\WebApi\bin\Debug\net6.0\Data.pdb
+C:\dev\C#\c_sharp\Warren\WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\dev\C#\c_sharp\Warren\WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\dev\C#\c_sharp\Warren\WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\dev\C#\c_sharp\Warren\WebApi\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\dev\C#\c_sharp\Warren\WebApi\bin\Debug\net6.0\Npgsql.dll
+C:\dev\C#\c_sharp\Warren\WebApi\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
