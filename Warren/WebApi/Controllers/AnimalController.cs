@@ -20,6 +20,8 @@ namespace WebApi.Controllers
             return repo.GetAll();
         }
 
+      
+
 
         [HttpPost]
         public string Post(Animal model)
@@ -33,7 +35,7 @@ namespace WebApi.Controllers
         {
             return repo.Delete(id);
         }
-        [HttpPatch]
+        [HttpPut]
         public string Update(Animal model)
         {
             return repo.Update(model);

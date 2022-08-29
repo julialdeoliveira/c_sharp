@@ -54,9 +54,10 @@ namespace Data.Repository
         }
         public virtual string Delete(int id)
         {
+            T model = GetById(id);
             using (WarrenContext warrenContext = new WarrenContext())
             {
-                warrenContext.Entry<T>(this.GetById(id)).State = Microsoft.EntityFrameworkCore.EntityState.Deleted;
+                warrenContext.Entry<T>(model).State = Microsoft.EntityFrameworkCore.EntityState.Deleted;
                 warrenContext.SaveChanges();
             }
             return "Deletado";
