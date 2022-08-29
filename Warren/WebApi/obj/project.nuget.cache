@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "kKSsy2d68nUXD69b9ibShf2rnanZVgCRwsBo9Qro6iS6Y8mp26G7rKeccY0C+xtNg2NM25qFNyGhzDJ1pdpwmA==",
+  "dgSpecHash": "CkxaUXg157fHNwEzfPQ0zCNhbTBDV2vOVN0N78F43q+TPHzc5FahRWt8RpJAjG6ZxUQN9Kb02guAybiEj/DsTA==",
   "success": true,
   "projectFilePath": "C:\\dev\\C#\\c_sharp\\Warren\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Júlia.Oliveira\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Júlia.Oliveira\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.8\\microsoft.entityframeworkcore.6.0.8.nupkg.sha512",
     "C:\\Users\\Júlia.Oliveira\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.8\\microsoft.entityframeworkcore.abstractions.6.0.8.nupkg.sha512",
     "C:\\Users\\Júlia.Oliveira\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.8\\microsoft.entityframeworkcore.analyzers.6.0.8.nupkg.sha512",
-    "C:\\Users\\Júlia.Oliveira\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.7\\microsoft.entityframeworkcore.relational.6.0.7.nupkg.sha512",
+    "C:\\Users\\Júlia.Oliveira\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.8\\microsoft.entityframeworkcore.design.6.0.8.nupkg.sha512",
+    "C:\\Users\\Júlia.Oliveira\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.8\\microsoft.entityframeworkcore.relational.6.0.8.nupkg.sha512",
     "C:\\Users\\Júlia.Oliveira\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Júlia.Oliveira\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Júlia.Oliveira\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",

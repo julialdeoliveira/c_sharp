@@ -6,13 +6,15 @@ namespace api_pessoa.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class GenericController<T> : ControllerBase where T : BaseModel
-    {
-        private BaseRepository<T> repo;
+    public class GenericController<T, R> : ControllerBase where T : BaseModel where R : BaseRepository<T>
 
-        public GenericController()
+    {
+        private R repo;
+       
+
+        public GenericController(R  repo)
         {
-            this.repo = new BaseRepository<T>();
+            this.repo = repo;
         }
 
    

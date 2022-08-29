@@ -13,6 +13,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Model\UsuarioModel.cs" />
+    <Compile Remove="Repository\AnimalRepository.cs" />
+    <Compile Remove="Repository\PlantaRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.8">
       <PrivateAssets>all</PrivateAssets>

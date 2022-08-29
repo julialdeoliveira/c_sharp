@@ -33,3 +33,5 @@ C:\dev\C#\c_sharp\Warren\WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.R
 C:\dev\C#\c_sharp\Warren\WebApi\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 C:\dev\C#\c_sharp\Warren\WebApi\bin\Debug\net6.0\Npgsql.dll
 C:\dev\C#\c_sharp\Warren\WebApi\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\dev\C#\c_sharp\Warren\WebApi\bin\Debug\net6.0\Humanizer.dll
+C:\dev\C#\c_sharp\Warren\WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll

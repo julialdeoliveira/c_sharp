@@ -5,8 +5,12 @@ using api_pessoa.Controllers;
 
 namespace WebApi.Controllers
 {
-    public class AnimalController : GenericController<Animal>
+    public class AnimalController : GenericController<Animal, RepositoryAnimal>
     {
+        public AnimalController() : base(new RepositoryAnimal())
+        {
+
+        }
       
 
     }

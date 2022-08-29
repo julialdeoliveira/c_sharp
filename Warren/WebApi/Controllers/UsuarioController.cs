@@ -5,11 +5,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers
 {
-    public class PlantaController : GenericController<Planta, RepositoryPlanta>
+    public class UsuarioController : GenericController<Usuario, UsuarioRepository>
     {
-        public PlantaController() : base(new RepositoryPlanta())
+        public UsuarioController() : base(new UsuarioRepository())
         {
-
         }
 
 
