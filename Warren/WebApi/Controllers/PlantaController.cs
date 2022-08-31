@@ -10,7 +10,7 @@ namespace WebApi.Controllers
         public PlantaController() : base(new RepositoryPlanta())
         {
 
-        }
+        } 
 
 
     }

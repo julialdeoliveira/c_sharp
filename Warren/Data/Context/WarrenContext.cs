@@ -19,7 +19,7 @@ namespace Data.NovaPasta
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=172.23.192.1; Port=5436; Database=postgres; UserId=postgres; Password=123456");
+            optionsBuilder.UseNpgsql("Host=192.168.0.138; Port=5436; Database=postgres; UserId=postgres; Password=123456");
         }
     }
 }
