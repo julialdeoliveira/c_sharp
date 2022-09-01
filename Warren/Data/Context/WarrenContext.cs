@@ -15,6 +15,10 @@ namespace Data.NovaPasta
         public DbSet<Planta> Planta { get; set; }
 
         public DbSet<Usuario> Usuario { get; set; }
+
+        public DbSet<Produto> Produto { get; set; }
+
+        public DbSet<Categoria>Categoria { get; set; }
         #endregion
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

@@ -2,6 +2,7 @@
 using Data.NovaPasta;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -10,9 +11,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Data.Migrations
 {
     [DbContext(typeof(WarrenContext))]
-    partial class WarrenContextModelSnapshot : ModelSnapshot
+    [Migration("20220901112830_ADD-Migration CreateTableProduto")]
+    partial class ADDMigrationCreateTableProduto
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -42,28 +44,7 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Animal", (string)null);
-                });
-
-            modelBuilder.Entity("Data.Model.Categoria", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Descricao")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Categoria", (string)null);
+                    b.ToTable("Animal");
                 });
 
             modelBuilder.Entity("Data.Model.Planta", b =>
@@ -88,7 +69,7 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Planta", (string)null);
+                    b.ToTable("Planta");
                 });
 
             modelBuilder.Entity("Data.Model.Produto", b =>
@@ -99,21 +80,16 @@ namespace Data.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("CategoriaId")
-                        .HasColumnType("integer");
-
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<decimal>("Preco")
-                        .HasColumnType("numeric");
+                    b.Property<double>("Preco")
+                        .HasColumnType("double precision");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoriaId");
-
-                    b.ToTable("Produto", (string)null);
+                    b.ToTable("Produto");
                 });
 
             modelBuilder.Entity("Data.Model.Usuario", b =>
@@ -138,18 +114,7 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Usuario", (string)null);
-                });
-
-            modelBuilder.Entity("Data.Model.Produto", b =>
-                {
-                    b.HasOne("Data.Model.Categoria", "Categoria")
-                        .WithMany()
-                        .HasForeignKey("CategoriaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Categoria");
+                    b.ToTable("Usuario");
                 });
 #pragma warning restore 612, 618
         }

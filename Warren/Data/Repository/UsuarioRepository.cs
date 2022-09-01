@@ -35,7 +35,6 @@ namespace Data.Repository
                 usuario = context.Usuario.Where(u=>u.Email == email && u.Password == password).FirstOrDefault();
 
             }
-            usuario.Password = null;
             JsonSerializerOptions jsonSerializerOptions = new() {
                 DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
 
