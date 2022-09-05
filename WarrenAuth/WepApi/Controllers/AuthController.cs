@@ -11,6 +11,7 @@ namespace WepApi.Controllers
     public class AuthController : ControllerBase
     {
           static  User _user = new User();
+        private readonly IConfiguration configuration;
         //Registro
         [HttpPost("Register")]
         public ActionResult<User> Register(UserDto userDto)
@@ -29,7 +30,7 @@ namespace WepApi.Controllers
         {
             if(userDto.UserName == _user.Name && _user.Password == userDto.Password)
             {
-            return Ok(JwtTokenUser.CreateToken(_user));
+            return Ok(new JwtTokenUser(this.configuration).CreateToken(_user));
 
             }
             return BadRequest("Usuário ou senha inválidos");
